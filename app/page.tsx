@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Instagram, Youtube } from "lucide-react"
+import { KitSignupForm } from "@/components/kit-signup-form"
 
 function TikTokIcon({ className }: { className?: string }) {
   return (
@@ -15,8 +16,8 @@ function TikTokIcon({ className }: { className?: string }) {
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#221e1f] flex flex-col items-center justify-center px-4">
-      <div className="flex flex-col items-center gap-6">
+    <main className="min-h-screen bg-[#221e1f] flex flex-col items-center justify-center px-4 py-12">
+      <div className="flex flex-col items-center gap-8 max-w-xl">
         <Image
           src="/images/logo.png"
           alt="Talk Ship Logo"
@@ -25,9 +26,27 @@ export default function Home() {
           priority
           className="w-full max-w-[400px] h-auto"
         />
-        <p className="text-white/80 text-xl tracking-widest uppercase font-light">creative conversations</p>
-        
-        <div className="flex items-center gap-6 mt-4">
+
+        <p className="text-white/80 text-base sm:text-lg font-normal text-center leading-relaxed">
+          Creative conversations with artists, builders, and creators who ship.
+          Each episode, we sit down with people who consistently ship their
+          creative work &ndash; exploring how they got started, what drives their
+          vision, and the stories and wisdom from along the path. New episodes weekly.
+        </p>
+
+        <h2 className="text-white text-xl sm:text-2xl font-medium text-center">
+          They&apos;re making, they&apos;re shipping, we&apos;re talking. 🎙️🚢
+        </h2>
+
+        <h2 className="text-white text-xl sm:text-2xl font-medium italic text-center">
+          Coming Soon &ndash; Spring 2026
+        </h2>
+
+        <div className="w-full max-w-md flex justify-center">
+          <KitSignupForm />
+        </div>
+
+        <div className="flex items-center gap-6 mt-2">
           <a
             href="https://instagram.com/talkshipfm"
             target="_blank"
@@ -56,6 +75,10 @@ export default function Home() {
             <Youtube className="w-6 h-6" />
           </a>
         </div>
+
+        <p className="text-white/40 text-sm mt-4">
+          &copy; {new Date().getFullYear()} Talk Ship. All rights reserved.
+        </p>
       </div>
     </main>
   )
