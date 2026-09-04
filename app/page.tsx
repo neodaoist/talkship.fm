@@ -31,7 +31,7 @@ export default function Home() {
           Creative conversations with artists, builders, and creators who ship.
           Each episode, we sit down with people who consistently ship their
           creative work &ndash; exploring how they got started, what drives their
-          vision, and stories and wisdom from along the path. New episodes weekly.
+          vision, and wisdom from along the path. New episodes weekly.
         </p>
 
         <h2 className="text-white text-xl sm:text-2xl font-medium text-center">
@@ -39,7 +39,7 @@ export default function Home() {
         </h2>
 
         <h2 className="text-white text-xl sm:text-2xl font-medium italic text-center">
-          Coming Soon &ndash; Spring 2026
+          Coming Soon | Autumn 2026
         </h2>
 
         <div className="w-full max-w-md flex justify-center">
